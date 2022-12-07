@@ -22,7 +22,7 @@ function Navi() {
 			<Typography sx={{textAlign: "center", marginTop: "10%"}} fontSize="50px">
 			<FontAwesomeIcon icon={faPersonDigging} fontSize="300px" />
 			<br/>
-				This site is under construction! 
+				This site is under construction! test2
 			</Typography>
 		</Container>
 	)
