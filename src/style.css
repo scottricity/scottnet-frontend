@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	background-color: rgb(31, 31, 31);
+}
+
+#navbar {
+	background-color: rgb(25, 25, 25);
+	color: white;
+}
+
+#navbar * {
+	background-color: rgb(25, 25, 25);
+}

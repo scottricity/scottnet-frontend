@@ -8,13 +8,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 import themeBck from "./theme.js"
 import { ThemeProvider } from '@mui/system';
+import "./style.css"
 
 function Navi() {
   return (
-    <Container sx={{textAlign: "center"}}>
-      <Typography display={'inline'}>
+    <Container id="navbar" sx={{textAlign: "center", width: "100%"}} maxWidth="auto">
+      <Typography display={'inline'} fontSize="25px">
         <FontAwesomeIcon icon={faTerminal} />
-        scottnet u
+        scottnet
       </Typography>
     </Container>
   )
