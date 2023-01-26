@@ -6,6 +6,16 @@ html, body {
 	color: white;
 }
 
+canvas {
+	position: absolute;
+	width: fit-content;
+	height: 100%;
+}
+
+.mount {
+	overflow: hidden;
+}
+
 /* Round selectors */
 .round {
 	border-radius: 7px;
@@ -29,6 +39,8 @@ html, body {
 
 #navbar {
 	background-color: rgb(25, 25, 25);
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 
 #navbar * {
@@ -37,8 +49,7 @@ html, body {
 
 .bio {
 	margin-top: 55px;
-	padding: 5px;
-	background-color: rgb(20,20,20);
+	background-color: rgb(36, 36, 36);
 }
 
 .bio-desc {

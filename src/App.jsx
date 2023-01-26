@@ -1,6 +1,6 @@
 import logo from './terminal-solid.svg';
 import React, { useState, useEffect } from "react";
-import { AppBar, Toolbar, Container, Menu, MenuItem, Typography, styled, Button, Box } from "@mui/material";
+import { AppBar, Toolbar, Container, Menu, MenuItem, Typography, styled, Button, Box, Chip, Divider, Avatar, Card, CardContent, CssBaseline, Grid } from "@mui/material";
 import { Utils } from "./utils.js";
 //Font Import
 import "@fontsource/ubuntu";
@@ -17,7 +17,7 @@ let utils = new Utils()
 
 function Navi() {
 	return (
-		<Container id="navbar" maxWidth="100%" sx={{ textAlign: "center", width: "100%" }}>
+		<Container id="navbar" disableGutters maxWidth="xl" sx={{ textAlign: "center" }}>
 			<Typography display={'inline'} fontSize="25px">
 				{utils.escapeCode("<")} {utils.escapeCode("/")} Portfolio | Jonathan Scott {utils.escapeCode(">")}
 			</Typography>
@@ -38,29 +38,59 @@ function Navi() {
 function App() {
 	return (
 		<ThemeProvider theme={themeBck}>
-			<div>
+			<div className='mount'>
 				<Navi></Navi>
-				<Container className='bio round1' disableGutters maxWidth="md"> {/* Add responsiveness?? */}
-					<div className='img-section'>
-						<img src='./faceshot1.png' className='round1' id="profile-faceshot"></img>
-						<div className='bio-desc'>
-							<Typography variant='h5' fontFamily={"roboto"}>
-								Jonathan Scott
+				<Grid container>
+					<Grid xs item
+						alignItems="center"
+						display="flex"
+						justifyContent="center">
+						<Card
+							className='bio round1'
+							sx={{ width: 700, justifyContent: "center" }}> {/* Add responsiveness?? */}
+							<div
+								className='img-section'>
+								<Avatar
+									src='./faceshot1.png'
+									sx={{ width: 140, height: 140 }}>
+								</Avatar>
+								<CardContent
+									className='bio-desc'>
+									<Typography
+										variant='h5'
+										fontFamily={"roboto"}>
+										Jonathan Scott
+									</Typography>
+									<Typography
+										variant='subtitle1'
+										fontStyle={"italic"}
+										color={"GrayText"}>
+										Full-Stack Developer with ADHD
+									</Typography>
+									<Typography
+										variant='h6'>
+										Something about me will go here.
+									</Typography>
+								</CardContent>
+							</div>
+							<Divider>
+								<Chip
+									label="Projects"
+									variant='filled'
+									sx={{ fontSize: "larger" }}></Chip>
+							</Divider>
+							<Typography
+								variant='h6'>
+								This site is still underconstruction
 							</Typography>
-							<Typography variant='subtitle1' fontStyle={"italic"} color={"GrayText"}>
-								Full-Stack Developer with ADHD
+						</Card>
+						<Card>
+							<Typography>
+								h
 							</Typography>
-							<Typography variant='h6'>
-								Something about me will go here.
-							</Typography>
-						</div>
-					</div>
-					<div className='media'>
-						<Typography variant='subtitle1'>
-							This site is still underconstruction
-						</Typography>
-					</div>
-				</Container>
+						</Card>
+					</Grid>
+				</Grid>
 			</div>
 		</ThemeProvider>
 	);
