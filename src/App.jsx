@@ -39,6 +39,7 @@ function App() {
 	return (
 		<ThemeProvider theme={themeBck}>
 			<div>
+				
 				<Navi></Navi>
 				<Container className='bio round1' disableGutters maxWidth="md"> {/* Add responsiveness?? */}
 					<div className='img-section'>
