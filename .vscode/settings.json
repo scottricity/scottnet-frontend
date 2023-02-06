@@ -1,0 +1,14 @@
+{
+	"background.customImages": [
+		"file:///D:/VSC_Backgrounds/spaceship2.jpg",
+		"file:///D:/VSC_Backgrounds/spaceship1.png"
+	],
+	"background.fullscreen": {
+
+		"image": "file:///D:/VSC_Backgrounds/spaceship2.jpg",
+		"opacity": 0.91,
+		"size": "cover",
+		"position": "center",
+		"interval": 0
+	}
+}
