@@ -11,7 +11,7 @@ import { faTerminal, faWarning, faPersonDigging } from '@fortawesome/free-solid-
 import themeBck from "./theme.js"
 import { ThemeProvider } from '@mui/system';
 import "./style.scss";
-import { BrowserRouter , Route , Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./components/Home";
 import Discord from "./components/Discord";
@@ -21,13 +21,14 @@ const Offset = styled('div')(({ theme }) => theme.mixins.toolbar)
 function App() {
 	return (
 		<ThemeProvider theme={themeBck}>
+			<CssBaseline />
 			<div className='mount'>
-			<BrowserRouter>
-						<Routes>
-							<Route path='/' element={<Home />} />
-							<Route path='/discord' element={<Discord />} />
-						</Routes>
-					</BrowserRouter>
+				<BrowserRouter>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/discord' element={<Discord />} />
+					</Routes>
+				</BrowserRouter>
 			</div>
 		</ThemeProvider>
 	);
