@@ -1,0 +1,10 @@
+$lightWhite: rgb(240, 240, 240);
+$prettyDark: rgb(31,31,31);
+$notSoDark: rgb(27, 27, 27);
+
+html, body {
+	margin: 0;
+	background-color: $notSoDark;
+	color: $lightWhite;
+	height: 100%;
+}
