@@ -39,6 +39,10 @@ class Utils {
 		}
 		return stem
 	}
+
+	autoSize = (n) => {
+		return { width: n, height: n }
+	}
 }
 
 

@@ -16,8 +16,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Discord from "./components/Discord";
 
-const Offset = styled('div')(({ theme }) => theme.mixins.toolbar)
-
 function App() {
 	return (
 		<ThemeProvider theme={themeBck}>
