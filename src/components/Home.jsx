@@ -76,7 +76,7 @@ class Media extends React.Component {
 						</MediaButtons.GithubButton>
 					</ListItem>
 					<ListItem>
-						<MediaButtons.NpmButton>
+						<MediaButtons.NpmButton href="https://www.npmjs.com/~scottricity" target="_blank">
 							<Typography textTransform={"none"}>
 								NPM
 							</Typography>
