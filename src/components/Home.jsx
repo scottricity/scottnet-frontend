@@ -48,7 +48,7 @@ class Bio extends React.Component {
 					</Typography>
 				</Divider>
 				<Typography variant="h6">
-					I'm an open source developer with a passion for robotics and game development. I love to create games, Discord bots and more.
+					hi
 				</Typography>
 			</Box>
 		)
